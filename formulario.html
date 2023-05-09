@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Bienvenidos a mi fiesta</h1>
+    <h2>Por favor, confirmar asistencia:</h2>
+<section style="align-items: center;">
+  <div style="align-items: center;">
+    <form class="formulario">
+      Nombre <input type="text" name="name" id="names" />
+      <br />
+      Edad <input type="number" name="age" id="age" />
+      <br />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
-  <title>Formulario</title>
-</head>
-<body>
-  <h1>Bienvenidos a mi fiesta</h1>
-  <h2>Por favor, confirmar asistencia:</h2>
+      Nacionalidad
+      <select name="nationality" id="nationality">
+        <!-- se agregoo la opcion con valor vacio y se agrego el valor a cada nacionalidad -->
+        <option value="">Seleccione una nacionalidad</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Mexicana">Mexicana</option>
+        <option value="Peruana">Peruana</option>
+        <option value="Venezolana">Venezolana</option>
+      </select>
+      <br />
+      <input type="submit" />
+    </form>
 
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
-    <br />
-    Edad <input type="number" name="age" id="age">
-    <br />
-
-    Nacionalidad
-    <select name="nationality" id="nationality">
-      <option value="ar">Argentina</option>
-      <option value="mx">Mexicana</option>
-      <option value="per">Peruana</option>
-      <option value="vnzl">Venezolana</option>
-    </select>
-    <br />
-    <input type="submit">
-  </form>
-
-  <div>
-    <h2>Lista de invitados</h2>
+    <div>
+      <h2 id="lista-de-invitados">Lista de invitados</h2>
+      <!-- se le agrego el id a lista invitados-->
+    </div>
 
   </div>
-
-  <script src="../formulario.js"></script>
-</body>
-
+</section>
+    
+    <script src="./formulario.js"></script>
+  </body>
 </html>
